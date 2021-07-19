@@ -1,4 +1,4 @@
-import '../styles/globals.css';
+import GlobalStyles from "../components/GlobalStyles";
 import "@material-tailwind/react/tailwind.css";
 import Head from "next/head";
 
@@ -20,6 +20,7 @@ function MyApp({ Component, pageProps }) {
           crossOrigin="anonymous"
         />
       </Head>
+      <GlobalStyles />
       <Component {...pageProps} />
     </div>
   );
